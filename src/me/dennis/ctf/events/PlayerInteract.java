@@ -17,7 +17,6 @@ public class PlayerInteract implements Listener {
 	public void onPlayerInteract(PlayerInteractEvent event) {
 		Player player = event.getPlayer();
 		Action action = event.getAction();
-		BlockState clickedBlock = event.getClickedBlock().getState();
 
 		if (!player.getGameMode().equals(GameMode.SURVIVAL)) {
 			return;
@@ -26,6 +25,8 @@ public class PlayerInteract implements Listener {
 		if (!action.equals(Action.LEFT_CLICK_BLOCK)) {
 			return;
 		}
+
+		BlockState clickedBlock = event.getClickedBlock().getState();
 		
 		if (!clickedBlock.getType().equals(Material.WOOL)) {
 			return;
