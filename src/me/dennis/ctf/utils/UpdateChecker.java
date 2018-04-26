@@ -22,7 +22,7 @@ public class UpdateChecker implements Listener {
 	
 	public static void checkUpdate() {
 		try {
-			BufferedReader reader = new BufferedReader(new InputStreamReader(new URL("https://gitlab.com/dennislysenko/AutoRestart-v3/raw/master/plugin.yml").openStream()));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(new URL("https://gitlab.com/dennislysenko/CaptureTheFlag/raw/master/plugin.yml").openStream()));
 			String line;
 			while ((line = reader.readLine()) != null) {
 				if (line.startsWith("version:")) {

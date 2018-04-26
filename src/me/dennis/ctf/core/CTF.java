@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import me.dennis.ctf.commands.CmdCTF;
 import me.dennis.ctf.events.PlayerInteract;
+import me.dennis.ctf.utils.Console;
 
 public class CTF extends JavaPlugin {
 	
